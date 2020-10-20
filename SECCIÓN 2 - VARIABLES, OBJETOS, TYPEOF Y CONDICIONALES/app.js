@@ -1,29 +1,27 @@
-var a = 10;
-var b = a;
+var persona = {
+    nombre: "Juana",
+    apellido: "Herrera",
+    edad: 25,
+    direccion: {
+        pais: "Costa Rica",
+        ciudad: "San José",
+        edificio: {
+            nombre: "Edificio principal",
+            telefono: "2222-3333"
+        }
+    }
+};
 
-console.log("a: ", a);
-console.log("b: ", b);
+persona.direccion.zipcode = 11101;
 
-a = 20;
+var edificio = persona.direccion.edificio;
 
-console.log("a: ", a);
-console.log("b: ", b);
+edificio.nopiso = "8vo piso";
 
-var c = {
-    nombre: "Juana"
-}
+console.log(persona);
 
-var d = c;
+var campo1 = "";
+console.log(persona["direccion"]["pais"]);
 
-console.log("c: ", c);
-console.log("d: ", d);
-
-c.nombre = "Maria";
-
-console.log("c: ", c);
-console.log("d: ", d);
-
-d.nombre = "Pedro";
-
-console.log("c: ", c);
-console.log("d: ", d);
+var campo2 = "edad";
+console.log(persona[campo2]);
