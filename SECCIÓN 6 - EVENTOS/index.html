@@ -8,13 +8,19 @@
 </head>
 
 <body oncontextmenu="return false">
-    <button id="objDemo">Soy un botón</button>
+    <form onsubmit="return validar();">
+        <input type="text" id="txtNombre" name="txtNombre">
+        <input type="text" id="txtApellido" name="txtApellido">
+
+        <button id="objDemo" action="submit">Soy un botón</button>
+    </form>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nemo delectus quaerat ex, eligendi non enim corrupti
     cumque exercitationem fuga. Maiores neque tempore vel quae ad quisquam repellendus nostrum assumenda.</p>
 
     <script src="app.js"></script>
     <script src="app1.js"></script>
+    <script src="app2.js"></script>
 </body>
 
 </html>
